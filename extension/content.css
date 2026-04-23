@@ -1,0 +1,38 @@
+.tg-btn-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding-top: 8px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tg-verify-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+}
+
+.tg-verify-btn:hover {
+  background: linear-gradient(135deg, #4338ca, #4f46e5);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
+}
+
+.tg-verify-btn:active {
+  transform: translateY(0);
+}
+
+.tg-verify-btn svg {
+  flex-shrink: 0;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TruthGuard AI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      width: 280px;
+      background: #0f172a;
+      color: #f1f5f9;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      padding: 16px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .logo {
+      width: 32px; height: 32px;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo svg { width: 16px; height: 16px; }
+    .title { font-size: 14px; font-weight: 700; }
+    .subtitle { font-size: 11px; color: #64748b; margin-top: 1px; }
+    .desc {
+      font-size: 12px; color: #94a3b8; line-height: 1.5;
+      background: #1e293b; border-radius: 8px; padding: 10px;
+      margin-bottom: 12px;
+    }
+    .btn {
+      display: block; width: 100%; padding: 9px;
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: white; border: none; border-radius: 8px;
+      font-size: 12px; font-weight: 600; cursor: pointer;
+      text-align: center; text-decoration: none;
+    }
+    .btn:hover { background: linear-gradient(135deg, #4338ca, #4f46e5); }
+    .status {
+      display: flex; align-items: center; gap-6px;
+      margin-top: 10px; font-size: 11px; color: #64748b;
+      justify-content: center;
+    }
+    .dot { width: 6px; height: 6px; background: #22c55e; border-radius: 50%; margin-right: 6px; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+      </svg>
+    </div>
+    <div>
+      <div class="title">TruthGuard AI</div>
+      <div class="subtitle">Hallucination Detector</div>
+    </div>
+  </div>
+
+  <div class="desc">
+    Visit ChatGPT and click the <strong>"Verify with TruthGuard AI"</strong>
+    button that appears below any AI response to check it for hallucinations.
+  </div>
+
+  <a href="http://localhost:5173" target="_blank" class="btn">
+    Open TruthGuard AI
+  </a>
+
+  <div class="status">
+    <div class="dot"></div>
+    Extension active on ChatGPT
+  </div>
+</body>
+</html>
